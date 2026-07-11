@@ -14,9 +14,10 @@
   - [2. Data Cleaning & Preprocessing](#2-data-cleaning--preprocessing)
   - [3. Feature Engineering](#3-feature-engineering)
   - [4. Exploratory Data Analysis (EDA)](#4-exploratory-data-analysis-eda)
-  - [5. SQL KPI Queries](#5-sql-kpi-queries)
-  - [6. RFM Analysis](#6-rfm-analysis)
-  - [7. K-Means Customer Segmentation](#7-k-means-customer-segmentation)
+  - [5. Interactive Dashboard (Apache Superset)](#5-interactive-dashboard-apache-superset)
+  - [6. SQL KPI Queries](#6-sql-kpi-queries)
+  - [7. RFM Analysis](#7-rfm-analysis)
+  - [8. K-Means Customer Segmentation](#8-k-means-customer-segmentation)
 - [Key Findings](#key-findings)
 - [Technologies Used](#technologies-used)
 - [How to Run](#how-to-run)
@@ -68,6 +69,7 @@ project/
 ├── My_sql.session.sql    # SQL queries for KPI analysis
 ├── data.csv              # Raw dataset (~45 MB, 541,909 rows)
 ├── cleaned_data.csv      # Cleaned dataset (~57 MB, 522,725 rows)
+├── dashboard.jpg         # Apache Superset dashboard screenshot
 └── README.md             # This file
 ```
 
@@ -123,7 +125,27 @@ New columns derived from cleaned data:
 - **November** is the peak revenue month — driven by Black Friday and Christmas stock preparation.
 - December shows a sharp drop (dataset ends on Dec 9, 2011).
 
-### 5. SQL KPI Queries
+### 5. Interactive Dashboard (Apache Superset)
+
+An interactive BI dashboard was built using **Apache Superset** connected to the cleaned MySQL dataset. The dashboard provides a real-time, visual overview of all core business KPIs.
+
+![Sales Dashboard](dashboard.jpg)
+
+#### Dashboard Panels
+
+| Panel | Chart Type | Description |
+|---|---|---|
+| **Total Revenue** | Big Number | Overall revenue: **$10M** |
+| **Average Order Value (AOV)** | Big Number | AOV: **$505.85** |
+| **Average Basket Size** | Big Number | Avg basket: **$273.21** |
+| **Sales & Basket Trends Over Time** | Line Chart | Monthly revenue trend from Dec 2010 to Dec 2011, showing the November peak |
+| **High-Revenue Products vs. Profitability** | Horizontal Bar | Top 10 products comparing total revenue vs. total units sold |
+| **Global Market Breakdown** | Pie Chart | Revenue distribution by country — UK dominates with **$8.48M** (87% of total) |
+| **Top Customers Leaderboard** | Table | Top 10 customers ranked by total orders and total revenue, with Customer 12748 leading at 206 orders |
+
+---
+
+### 6. SQL KPI Queries
 
 The `My_sql.session.sql` file contains structured SQL queries run against the `cleaned_sales_data` table (loaded into MySQL). Key analyses include:
 
@@ -138,7 +160,7 @@ The `My_sql.session.sql` file contains structured SQL queries run against the `c
 | **Basket Size** | Average items per order by month |
 | **Product Affinity (Market Basket)** | Co-purchase analysis using self-join on `InvoiceNo` to find frequently bought-together products |
 
-### 6. RFM Analysis
+### 7. RFM Analysis
 
 RFM (Recency, Frequency, Monetary) analysis segments customers based on purchasing behavior:
 
@@ -165,7 +187,7 @@ RFM (Recency, Frequency, Monetary) analysis segments customers based on purchasi
 | Can't Lose Them | 1–2 | 3–5 | Once loyal, now dormant |
 | Hibernating / Lost | 1–2 | 1–2 | Inactive, low value |
 
-### 7. K-Means Customer Segmentation
+### 8. K-Means Customer Segmentation
 
 An unsupervised machine learning approach to validate and refine the RFM segments:
 
@@ -214,6 +236,7 @@ An unsupervised machine learning approach to validate and refine the RFM segment
 | **Seaborn** | Statistical visualizations (histograms, KDE, scatter) |
 | **Scikit-learn** | K-Means clustering, PCA, StandardScaler, Silhouette Score |
 | **MySQL** | KPI queries on cleaned data |
+| **Apache Superset** | Interactive BI dashboard |
 | **Jupyter Notebook** | Interactive analysis environment |
 
 ---
@@ -225,6 +248,14 @@ An unsupervised machine learning approach to validate and refine the RFM segment
 ```bash
 pip install pandas numpy matplotlib seaborn scikit-learn jupyter
 ```
+
+### Download the Dataset
+
+The CSV files are too large for GitHub. Download the raw data from the UCI repository:
+
+1. Download from [UCI Online Retail Dataset](https://archive.ics.uci.edu/ml/datasets/online+retail)
+2. Save the file as `data.csv` in the project root directory
+3. Run the notebook — it will generate `cleaned_data.csv` automatically
 
 ### Run the Analysis
 

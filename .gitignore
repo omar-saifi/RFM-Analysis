@@ -1,0 +1,15 @@
+# Large data files (download from UCI repository - see README)
+data.csv
+cleaned_data.csv
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# OS files
+.DS_Store
+Thumbs.db
