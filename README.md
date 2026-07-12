@@ -144,8 +144,37 @@ An interactive BI dashboard was built using **Apache Superset** connected to the
 | **Top Customers Leaderboard** | Table | Top 10 customers ranked by total orders and total revenue, with Customer 12748 leading at 206 orders |
 
 ---
+## 📁 Apache Superset Dashboard Configurations
+
+The `superset_dashboard/` directory contains the complete blueprint of the BI dashboard exported as a text-based asset matrix, allowing you to replicate the entire environment seamlessly.
+
+📁 superset_dashboard/
+├── dashboards/   # JSON layouts defining chart positioning, grids, & CSS overrides
+├── charts/       # Declarative YAML mapping slices, axis rules, & metric configurations
+└── datasets/     # YAML metadata declaring virtual schemas & underlying SQL queries
+
+### 📦 Asset Breakdown
+
+| Component | Format | Description |
+| :--- | :--- | :--- |
+| **Dashboards** | `JSON` | Stores the visual structure, grid placement, and responsive layout parameters of the main reporting interface. |
+| **Charts** | `YAML` | Contains granular visualization configurations, color palettes, metric aggregations, and query filters for individual slices. |
+| **Datasets** | `YAML` | Declares database connection mapping, semantic layer columns, custom calculated metrics, and physical-to-virtual table schemas. |
+
+### 📥 How to Import
+
+To restore this interactive dashboard to your local Apache Superset instance, follow these steps:
+
+1. Compress the entire contents of the `superset_dashboard/` folder into a single `.zip` archive.
+2. Open your **Apache Superset** UI web interface.
+3. Navigate to the **Dashboards** tab in the top navigation bar.
+4. Click the **Import Dashboard** icon *(the upload arrow icon located in the top-right corner)*.
+5. Upload your created `.zip` package. Superset will automatically parse the schemas, rebuild the charts, and reconstruct the dashboard layout.
+
+> ⚠️ **Note:** Ensure your underlying database connection profile matches the schema defined in the `datasets/` files to allow immediate query execution.
 
 ### 6. SQL KPI Queries
+
 
 The `KPI.sql` file contains structured SQL queries run against the `cleaned_sales_data` table (loaded into MySQL). Key analyses include:
 
