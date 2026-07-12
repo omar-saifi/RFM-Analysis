@@ -147,7 +147,7 @@ An interactive BI dashboard was built using **Apache Superset** connected to the
 
 ### 6. SQL KPI Queries
 
-The `My_sql.session.sql` file contains structured SQL queries run against the `cleaned_sales_data` table (loaded into MySQL). Key analyses include:
+The `KPI.sql` file contains structured SQL queries run against the `cleaned_sales_data` table (loaded into MySQL). Key analyses include:
 
 | KPI | Query Description |
 |---|---|
