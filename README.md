@@ -267,7 +267,7 @@ jupyter notebook analyse.ipynb
 ### Run SQL Queries
 
 1. Import `cleaned_data.csv` into a MySQL database as a table named `cleaned_sales_data`.
-2. Execute the queries from `My_sql.session.sql` in your MySQL client.
+2. Execute the queries from `KPI.sql` in your MySQL client.
 
 ---
 
