@@ -1,0 +1,374 @@
+# Licensed to the Apache Software Foundation (ASF) under one
+# or more contributor license agreements.  See the NOTICE file
+# distributed with this work for additional information
+# regarding copyright ownership.  The ASF licenses this file
+# to you under the Apache License, Version 2.0 (the
+# "License"); you may not use this file except in compliance
+# with the License.  You may obtain a copy of the License at
+#
+#   http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing,
+# software distributed under the License is distributed on an
+# "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+# KIND, either express or implied.  See the License for the
+# specific language governing permissions and limitations
+# under the License.
+certification_details: ''
+certified_by: null
+css: ''
+dashboard_title: sales dashboard
+description: null
+metadata:
+  chart_configuration:
+    06fab953-eaa3-4905-9f37-e0ba49092c82:
+      crossFilters:
+        chartsInScope:
+        - 8ea350b3-c20f-4474-ba62-ae54f9d9b37d
+        - 61ddb163-df15-4a39-a74e-4f3dd9e607f9
+        - b0fe5b74-ce9a-4bcc-8137-fe57621aff02
+        - c47454b1-f2a6-4888-81de-39b30bbb36c1
+        - 432eb80a-aa2a-4d56-b111-53baec7bbb2e
+        - cdd31d05-222f-4541-9d45-3f6c319386c4
+        scope: global
+      id: 06fab953-eaa3-4905-9f37-e0ba49092c82
+    432eb80a-aa2a-4d56-b111-53baec7bbb2e:
+      crossFilters:
+        chartsInScope:
+        - 8ea350b3-c20f-4474-ba62-ae54f9d9b37d
+        - 61ddb163-df15-4a39-a74e-4f3dd9e607f9
+        - b0fe5b74-ce9a-4bcc-8137-fe57621aff02
+        - c47454b1-f2a6-4888-81de-39b30bbb36c1
+        - 06fab953-eaa3-4905-9f37-e0ba49092c82
+        - cdd31d05-222f-4541-9d45-3f6c319386c4
+        scope: global
+      id: 432eb80a-aa2a-4d56-b111-53baec7bbb2e
+    b0fe5b74-ce9a-4bcc-8137-fe57621aff02:
+      crossFilters:
+        chartsInScope:
+        - 8ea350b3-c20f-4474-ba62-ae54f9d9b37d
+        - 61ddb163-df15-4a39-a74e-4f3dd9e607f9
+        - c47454b1-f2a6-4888-81de-39b30bbb36c1
+        - 432eb80a-aa2a-4d56-b111-53baec7bbb2e
+        - 06fab953-eaa3-4905-9f37-e0ba49092c82
+        - cdd31d05-222f-4541-9d45-3f6c319386c4
+        scope:
+          excluded:
+          - 106
+          rootPath:
+          - ROOT_ID
+      id: b0fe5b74-ce9a-4bcc-8137-fe57621aff02
+    c47454b1-f2a6-4888-81de-39b30bbb36c1:
+      crossFilters:
+        chartsInScope:
+        - 8ea350b3-c20f-4474-ba62-ae54f9d9b37d
+        - 61ddb163-df15-4a39-a74e-4f3dd9e607f9
+        - b0fe5b74-ce9a-4bcc-8137-fe57621aff02
+        - 432eb80a-aa2a-4d56-b111-53baec7bbb2e
+        - 06fab953-eaa3-4905-9f37-e0ba49092c82
+        - cdd31d05-222f-4541-9d45-3f6c319386c4
+        scope: global
+      id: c47454b1-f2a6-4888-81de-39b30bbb36c1
+  color_scheme: ''
+  color_scheme_domain: []
+  cross_filters_enabled: false
+  default_filters: '{}'
+  expanded_slices: {}
+  global_chart_configuration:
+    chartsInScope:
+    - 8ea350b3-c20f-4474-ba62-ae54f9d9b37d
+    - 61ddb163-df15-4a39-a74e-4f3dd9e607f9
+    - b0fe5b74-ce9a-4bcc-8137-fe57621aff02
+    - c47454b1-f2a6-4888-81de-39b30bbb36c1
+    - 432eb80a-aa2a-4d56-b111-53baec7bbb2e
+    - 06fab953-eaa3-4905-9f37-e0ba49092c82
+    - cdd31d05-222f-4541-9d45-3f6c319386c4
+    scope:
+      excluded: []
+      rootPath:
+      - ROOT_ID
+  label_colors: {}
+  map_label_colors:
+    Australia: '#E04355'
+    Belgium: '#A38F79'
+    France: '#666666'
+    Germany: '#FF7F44'
+    Ireland: '#5AC189'
+    Japan: '#3CCCCB'
+    Netherlands: '#454E7C'
+    SUM(Quantity * UnitPrice): '#004960'
+    SUM(Quantity) / COUNT(DISTINCT InvoiceNo): '#2893B3'
+    SUM(Total_Revenue), 106236.71999999834: '#454E7C'
+    SUM(Total_Revenue), 174156.54000000024: '#1FA8C9'
+    SUM(Total_Revenue), 42401.01000000009: '#8FD3E4'
+    SUM(Total_Revenue), 42513.47999999985: '#A38F79'
+    SUM(Total_Revenue), 54096.359999999964: '#A868B7'
+    SUM(Total_Revenue), 58927.61999999955: '#FCC700'
+    SUM(Total_Revenue), 64875.589999999946: '#E04355'
+    SUM(Total_Revenue), 66870.03000000028: '#666666'
+    SUM(Total_Revenue), 94159.8100000021: '#FF7F44'
+    SUM(Total_Revenue), 99445.23000000053: '#5AC189'
+    SUM(Total_Units_Sold), 106236.71999999834: '#A1A6BD'
+    SUM(Total_Units_Sold), 174156.54000000024: '#D3B3DA'
+    SUM(Total_Units_Sold), 42401.01000000009: '#B2B2B2'
+    SUM(Total_Units_Sold), 42513.47999999985: '#D1C6BC'
+    SUM(Total_Units_Sold), 54096.359999999964: '#9EE5E5'
+    SUM(Total_Units_Sold), 58927.61999999955: '#ACE1C4'
+    SUM(Total_Units_Sold), 64875.589999999946: '#EFA1AA'
+    SUM(Total_Units_Sold), 66870.03000000028: '#FEC0A1'
+    SUM(Total_Units_Sold), 94159.8100000021: '#3CCCCB'
+    SUM(Total_Units_Sold), 99445.23000000053: '#FDE380'
+    Spain: '#FCC700'
+    Switzerland: '#A868B7'
+    United Kingdom: '#1FA8C9'
+  native_filter_configuration:
+  - cascadeParentIds: []
+    controlValues:
+      creatable: true
+      defaultToFirstItem: false
+      enableEmptyFilter: false
+      inverseSelection: false
+      multiSelect: true
+      operatorType: exact
+      searchAllOptions: false
+    defaultDataMask:
+      extraFormData: {}
+      filterState: {}
+      ownState: {}
+    description: ''
+    filterType: filter_select
+    id: NATIVE_FILTER-JJLp1vUl-WIwYnG-JRRQF
+    name: Year
+    scope:
+      excluded: []
+      rootPath:
+      - ROOT_ID
+    sortMetric: null
+    targets:
+    - column:
+        name: Year
+      datasetUuid: 0b8f1a52-fac5-4549-87c3-ba9253d4b712
+    type: NATIVE_FILTER
+  - cascadeParentIds: []
+    controlValues:
+      creatable: true
+      defaultToFirstItem: false
+      enableEmptyFilter: false
+      inverseSelection: false
+      multiSelect: true
+      operatorType: exact
+      searchAllOptions: false
+    defaultDataMask:
+      extraFormData: {}
+      filterState: {}
+      ownState: {}
+    description: ''
+    filterType: filter_select
+    id: NATIVE_FILTER-9t7MSJW9QXwqNMLxWI5Hj
+    name: month
+    scope:
+      excluded: []
+      rootPath:
+      - ROOT_ID
+    sortMetric: null
+    targets:
+    - column:
+        name: Month
+      datasetUuid: 0b8f1a52-fac5-4549-87c3-ba9253d4b712
+    type: NATIVE_FILTER
+  - cascadeParentIds: []
+    controlValues:
+      creatable: true
+      defaultToFirstItem: false
+      enableEmptyFilter: false
+      inverseSelection: false
+      multiSelect: true
+      operatorType: exact
+      searchAllOptions: false
+    defaultDataMask:
+      extraFormData: {}
+      filterState: {}
+      ownState: {}
+    description: ''
+    filterType: filter_select
+    id: NATIVE_FILTER-lpYzt2FlYUxMLWAoDRxGN
+    name: Country
+    scope:
+      excluded: []
+      rootPath:
+      - ROOT_ID
+    sortMetric: null
+    targets:
+    - column:
+        name: Country
+      datasetUuid: 0b8f1a52-fac5-4549-87c3-ba9253d4b712
+    type: NATIVE_FILTER
+  refresh_frequency: 0
+  shared_label_colors: []
+  timed_refresh_immune_slices: []
+position:
+  CHART-explore-104-1:
+    children: []
+    id: CHART-explore-104-1
+    meta:
+      chartId: 104
+      height: 30
+      sliceName: Average Basket Size
+      uuid: 8ea350b3-c20f-4474-ba62-ae54f9d9b37d
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-F_kjMdWlcUCiufhzOqdFh
+    type: CHART
+  CHART-explore-105-1:
+    children: []
+    id: CHART-explore-105-1
+    meta:
+      chartId: 105
+      height: 30
+      sliceName: aov
+      uuid: 61ddb163-df15-4a39-a74e-4f3dd9e607f9
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-F_kjMdWlcUCiufhzOqdFh
+    type: CHART
+  CHART-explore-106-1:
+    children: []
+    id: CHART-explore-106-1
+    meta:
+      chartId: 106
+      height: 50
+      sliceName: Sales & Basket Trends Over Time
+      uuid: b0fe5b74-ce9a-4bcc-8137-fe57621aff02
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-gsGeIKiuZjOpILvnCS_ST
+    type: CHART
+  CHART-explore-107-1:
+    children: []
+    id: CHART-explore-107-1
+    meta:
+      chartId: 107
+      height: 56
+      sliceName: Global Market Breakdown
+      uuid: c47454b1-f2a6-4888-81de-39b30bbb36c1
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-lUZ2Wut0kUc8KwrX250zK
+    type: CHART
+  CHART-explore-108-1:
+    children: []
+    id: CHART-explore-108-1
+    meta:
+      chartId: 108
+      height: 50
+      sliceName: ' High-Revenue Products vs. Profitability'
+      uuid: 432eb80a-aa2a-4d56-b111-53baec7bbb2e
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-gsGeIKiuZjOpILvnCS_ST
+    type: CHART
+  CHART-explore-109-1:
+    children: []
+    id: CHART-explore-109-1
+    meta:
+      chartId: 109
+      height: 55
+      sliceName: Top Customers Leaderboard
+      uuid: 06fab953-eaa3-4905-9f37-e0ba49092c82
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-lUZ2Wut0kUc8KwrX250zK
+    type: CHART
+  CHART-explore-110-1:
+    children: []
+    id: CHART-explore-110-1
+    meta:
+      chartId: 110
+      height: 30
+      sliceName: Total Revenue
+      uuid: cdd31d05-222f-4541-9d45-3f6c319386c4
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-F_kjMdWlcUCiufhzOqdFh
+    type: CHART
+  DASHBOARD_VERSION_KEY: v2
+  DIVIDER-i_MO2NDVgdSD-zel-tHUY:
+    children: []
+    id: DIVIDER-i_MO2NDVgdSD-zel-tHUY
+    meta: {}
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: DIVIDER
+  GRID_ID:
+    children:
+    - ROW-F_kjMdWlcUCiufhzOqdFh
+    - ROW-gsGeIKiuZjOpILvnCS_ST
+    - DIVIDER-i_MO2NDVgdSD-zel-tHUY
+    - ROW-lUZ2Wut0kUc8KwrX250zK
+    id: GRID_ID
+    parents:
+    - ROOT_ID
+    type: GRID
+  HEADER_ID:
+    id: HEADER_ID
+    meta:
+      text: sales dashboard
+    type: HEADER
+  ROOT_ID:
+    children:
+    - GRID_ID
+    id: ROOT_ID
+    type: ROOT
+  ROW-F_kjMdWlcUCiufhzOqdFh:
+    children:
+    - CHART-explore-110-1
+    - CHART-explore-105-1
+    - CHART-explore-104-1
+    id: ROW-F_kjMdWlcUCiufhzOqdFh
+    meta:
+      background: BACKGROUND_WHITE
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-gsGeIKiuZjOpILvnCS_ST:
+    children:
+    - CHART-explore-106-1
+    - CHART-explore-108-1
+    id: ROW-gsGeIKiuZjOpILvnCS_ST
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-lUZ2Wut0kUc8KwrX250zK:
+    children:
+    - CHART-explore-107-1
+    - CHART-explore-109-1
+    id: ROW-lUZ2Wut0kUc8KwrX250zK
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+published: true
+slug: null
+uuid: 40107123-a450-4c09-b076-29fbd150d2a6
+version: 1.0.0

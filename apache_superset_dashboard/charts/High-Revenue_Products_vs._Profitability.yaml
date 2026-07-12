@@ -1,0 +1,122 @@
+# Licensed to the Apache Software Foundation (ASF) under one
+# or more contributor license agreements.  See the NOTICE file
+# distributed with this work for additional information
+# regarding copyright ownership.  The ASF licenses this file
+# to you under the Apache License, Version 2.0 (the
+# "License"); you may not use this file except in compliance
+# with the License.  You may obtain a copy of the License at
+#
+#   http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing,
+# software distributed under the License is distributed on an
+# "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+# KIND, either express or implied.  See the License for the
+# specific language governing permissions and limitations
+# under the License.
+cache_timeout: null
+certification_details: null
+certified_by: null
+dataset_uuid: 0b8f1a52-fac5-4549-87c3-ba9253d4b712
+description: null
+params:
+  adhoc_filters: []
+  annotation_layers: []
+  color_scheme: supersetColors
+  comparison_type: values
+  contributionMode: null
+  currency_format:
+    symbol: USD
+  dashboards:
+  - 10
+  datasource: 23__table
+  echart_options: '{}'
+  extra_form_data: {}
+  forecastEnabled: false
+  forecastInterval: 0.8
+  forecastPeriods: 10
+  groupby: []
+  legendOrientation: top
+  legendType: scroll
+  logAxis: false
+  matrixify_all_sort_by_columns: a_to_z
+  matrixify_all_sort_by_rows: a_to_z
+  matrixify_cell_title_template: ''
+  matrixify_charts_per_row: 4
+  matrixify_dimension_columns:
+    dimension: ''
+    values: []
+  matrixify_dimension_rows:
+    dimension: ''
+    values: []
+  matrixify_dimension_selection_mode_columns: members
+  matrixify_dimension_selection_mode_rows: members
+  matrixify_enable: false
+  matrixify_fit_columns_dynamically: true
+  matrixify_mode_columns: disabled
+  matrixify_mode_rows: disabled
+  matrixify_row_height: 300
+  matrixify_show_column_headers: true
+  matrixify_show_row_labels: true
+  matrixify_topn_order_columns: true
+  matrixify_topn_order_rows: true
+  matrixify_topn_value_columns: 10
+  matrixify_topn_value_rows: 10
+  metrics:
+  - aggregate: null
+    column: null
+    datasourceWarning: false
+    expressionType: SQL
+    hasCustomLabel: true
+    label: Total Revenue
+    optionName: metric_8fucnqyv8xh_6gb1mtojgxl
+    sqlExpression: SUM(Quantity * UnitPrice)
+  - aggregate: null
+    column: null
+    datasourceWarning: false
+    expressionType: SQL
+    hasCustomLabel: true
+    label: Total Units Sold
+    optionName: metric_vd13fjnnfol_m0zarz91m2m
+    sqlExpression: SUM(Quantity)
+  minorSplitLine: false
+  minorTicks: false
+  orientation: horizontal
+  rich_tooltip: true
+  row_limit: 10
+  showTooltipPercentage: false
+  showTooltipTotal: true
+  show_empty_columns: false
+  show_legend: true
+  show_value: false
+  slice_id: 108
+  sort_series_ascending: false
+  sort_series_type: sum
+  stack: Stack
+  timeseries_limit_metric: null
+  tooltipSortByMetric: false
+  tooltipTimeFormat: smart_date
+  truncateXAxis: true
+  truncateYAxis: false
+  truncate_metric: true
+  viz_type: echarts_timeseries_bar
+  xAxisLabelInterval: auto
+  xAxisLabelRotation: 0
+  x_axis: Description
+  x_axis_number_format: ~g
+  x_axis_time_format: smart_date
+  x_axis_title: ''
+  x_axis_title_margin: 40
+  y_axis_bounds:
+  - null
+  - null
+  y_axis_format: SMART_NUMBER
+  y_axis_title: ''
+  y_axis_title_margin: 50
+  y_axis_title_position: Left
+  zoomable: true
+query_context: null
+slice_name: ' High-Revenue Products vs. Profitability'
+uuid: 432eb80a-aa2a-4d56-b111-53baec7bbb2e
+version: 1.0.0
+viz_type: echarts_timeseries_bar

@@ -1,0 +1,134 @@
+# Licensed to the Apache Software Foundation (ASF) under one
+# or more contributor license agreements.  See the NOTICE file
+# distributed with this work for additional information
+# regarding copyright ownership.  The ASF licenses this file
+# to you under the Apache License, Version 2.0 (the
+# "License"); you may not use this file except in compliance
+# with the License.  You may obtain a copy of the License at
+#
+#   http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing,
+# software distributed under the License is distributed on an
+# "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+# KIND, either express or implied.  See the License for the
+# specific language governing permissions and limitations
+# under the License.
+cache_timeout: null
+certification_details: null
+certified_by: null
+dataset_uuid: 0b8f1a52-fac5-4549-87c3-ba9253d4b712
+description: null
+params:
+  adhoc_filters: []
+  annotation_layers: []
+  area: false
+  color_scheme: supersetAndPresetColors
+  comparison_type: values
+  contributionMode: null
+  currency_format:
+    symbol: USD
+  dashboards:
+  - 10
+  datasource: 23__table
+  echart_options: '{}'
+  extra_form_data: {}
+  force_max_interval: false
+  forecastEnabled: false
+  forecastInterval: 0.8
+  forecastPeriods: 10
+  group_others_when_limit_reached: false
+  groupby: []
+  legendOrientation: top
+  legendType: scroll
+  logAxis: false
+  markerEnabled: false
+  markerSize: 6
+  matrixify_all_sort_by_columns: a_to_z
+  matrixify_all_sort_by_rows: a_to_z
+  matrixify_cell_title_template: ''
+  matrixify_charts_per_row: 4
+  matrixify_dimension_columns:
+    dimension: ''
+    values: []
+  matrixify_dimension_rows:
+    dimension: ''
+    values: []
+  matrixify_dimension_selection_mode_columns: members
+  matrixify_dimension_selection_mode_rows: members
+  matrixify_enable: false
+  matrixify_fit_columns_dynamically: true
+  matrixify_mode_columns: disabled
+  matrixify_mode_rows: disabled
+  matrixify_row_height: 300
+  matrixify_show_column_headers: true
+  matrixify_show_row_labels: true
+  matrixify_topn_order_columns: true
+  matrixify_topn_order_rows: true
+  matrixify_topn_value_columns: 10
+  matrixify_topn_value_rows: 10
+  metrics:
+  - aggregate: null
+    column: null
+    datasourceWarning: false
+    expressionType: SQL
+    hasCustomLabel: true
+    label: Revenue
+    optionName: metric_oi69a2304k_8q9uh5519c9
+    sqlExpression: SUM(Quantity * UnitPrice)
+  - aggregate: null
+    column: null
+    datasourceWarning: false
+    expressionType: SQL
+    hasCustomLabel: true
+    label: (Avg Basket Size)
+    optionName: metric_gmujfl0d3av_647j2oj3cwp
+    sqlExpression: SUM(Quantity) / COUNT(DISTINCT InvoiceNo)
+  minorSplitLine: false
+  minorTicks: false
+  only_total: true
+  opacity: 0.2
+  order_desc: true
+  percentage_threshold: 0
+  rich_tooltip: true
+  row_limit: 10000
+  showTooltipPercentage: true
+  showTooltipTotal: true
+  show_empty_columns: true
+  show_legend: true
+  show_value: false
+  slice_id: 106
+  sort_series_ascending: false
+  sort_series_type: sum
+  time_shift_color: true
+  tooltipSortByMetric: true
+  tooltipTimeFormat: '%m/%d/%Y'
+  truncateXAxis: true
+  truncateYAxis: false
+  truncate_metric: true
+  viz_type: echarts_timeseries_line
+  xAxisForceCategorical: false
+  xAxisLabelInterval: auto
+  xAxisLabelRotation: 0
+  x_axis:
+    expressionType: SQL
+    label: InvoiceDate
+    sqlExpression: CONCAT(Year, '-', LPAD(Month, 2, '0'))
+  x_axis_number_format: ~g
+  x_axis_sort_asc: true
+  x_axis_time_format: smart_date
+  x_axis_title: Time
+  x_axis_title_margin: 40
+  y_axis_bounds:
+  - null
+  - null
+  y_axis_format: SMART_NUMBER
+  y_axis_title: value
+  y_axis_title_margin: 50
+  y_axis_title_position: Left
+  zoomable: false
+query_context: null
+slice_name: Sales & Basket Trends Over Time
+uuid: b0fe5b74-ce9a-4bcc-8137-fe57621aff02
+version: 1.0.0
+viz_type: echarts_timeseries_line
