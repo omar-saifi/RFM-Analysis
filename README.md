@@ -147,11 +147,12 @@ An interactive BI dashboard was built using **Apache Superset** connected to the
 ## 📁 Apache Superset Dashboard Configurations
 
 The `superset_dashboard/` directory contains the complete blueprint of the BI dashboard exported as a text-based asset matrix, allowing you to replicate the entire environment seamlessly.
-
+```
 📁 superset_dashboard/
 ├── dashboards/   # JSON layouts defining chart positioning, grids, & CSS overrides
 ├── charts/       # Declarative YAML mapping slices, axis rules, & metric configurations
 └── datasets/     # YAML metadata declaring virtual schemas & underlying SQL queries
+```
 
 ### 📦 Asset Breakdown
 
