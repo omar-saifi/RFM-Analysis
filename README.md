@@ -219,26 +219,31 @@ RFM (Recency, Frequency, Monetary) analysis segments customers based on purchasi
 
 ### 8. K-Means Customer Segmentation
 
-An unsupervised machine learning approach to validate and refine the RFM segments:
+An unsupervised clustering step used to validate and refine the rule-based RFM segments.
 
 #### Preprocessing
-1. **Log transformation** — `np.log1p()` applied to stabilize skewness in Frequency and Monetary; negated log for Recency (so higher = better for all features).
-2. **Standardization** — `StandardScaler` to normalize feature scales.
+1. **Log transformation** — `Recency` is transformed as `-np.log1p(Recency)`, while `Frequency` and `Monetary` use `np.log1p(...)` so that higher values are better for all features.
+2. **Standardization** — `StandardScaler` is applied to normalize the transformed RFM variables before clustering.
 
-#### Optimal Cluster Selection
-- Evaluated **k = 2 to 8** clusters using:
-  - **Inertia** (Elbow Method)
-  - **Silhouette Score** (cluster quality metric)
-- Best k selected by **highest silhouette score**.
+#### Cluster Evaluation
+- Evaluated **k = 2 to 8** using:
+  - **Inertia** (elbow check)
+  - **Silhouette Score** (cluster quality)
+- The notebook plots both metrics and then selects **five clusters** for the final segmentation (`best_k = 5`).
 
 #### Cluster Profiling
-- Clusters profiled by mean Recency, Frequency, and Monetary values.
-- Sorted by Monetary then Frequency (descending) and labeled:
-  - `Champions`, `Loyal Customers`, `Potential Growth`, `Needs Attention`, `At Risk`, `Low Value`, `New Opportunity`.
+- K-Means is fitted on the scaled RFM features and assigns each customer a `KMeansCluster`.
+- Cluster profiles are computed from the original RFM scale using mean `Recency`, `Frequency`, and `Monetary` values.
+- Results are sorted by **Monetary** and then **Frequency** (descending), and the clusters are labeled from best to worst:
+  - `Champions`
+  - `Loyal Customers`
+  - `Potential Growth`
+  - `Needs Attention`
+  - `At Risk`
 
 #### Visualization
-- **PCA (2-component)** used to project clusters into 2D space for scatter plot visualization.
-- Cross-tabulation comparing rule-based RFM segments vs. K-Means segments.
+- **PCA (2 components)** is used to project the customer clusters into 2D space for scatter-plot visualization.
+- A cross-tabulation compares the original RFM score segments with the K-Means segments to assess alignment.
 
 ---
 
