@@ -220,7 +220,7 @@ An interactive sales dashboard was also created using **Google Looker Studio** t
 
 **[View the Interactive Google Looker Studio Dashboard](https://datastudio.google.com/s/khGk9KWL8L0)**
 
-![Google Looker Studio Sales Dashboard](looker dashboard.jpg)
+![Google Looker Studio Sales Dashboard](looker_dashboard.jpg)
 
 #### Dashboard Objectives
 
